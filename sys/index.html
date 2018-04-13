@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIGADTIC</title>
+  <link rel="stylesheet" href="../css/foundation.min.css"/>
+  <link rel="stylesheet" href="../css/font-awesome.min.css"/>
+  <style>
+    .button.nmr{margin-right:0px!important;}
+  </style>
+</head>
+<body>
+  <!--Menu canvas-->
+  <aside class="off-canvas position-left vertical menu accordion-menu" id="menu" data-submenu-toggle="true" data-off-canvas>
+    <nav class="menu accordion-menu" data-accordion-menu>
+      <li class="menu-text">Empresa</li>
+      <li class="is-active"><a href=""><i class="fa fa-dashboard"></i> Dashboard</a></li>
+      <li>
+        <a href="#"><i class="fa fa-shopping-cart"></i> Pedidos</a>
+        <ul class="menu vertical nested">
+          <li><a href="">Ver</a></li>
+          <li><a href="">Comprar</a></li>
+          <li><a href="">Actualizar</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#"><i class="fa fa-cube"></i> Inventario</a>
+        <ul class="menu vertical nested">
+          <li><a href="">Materiales</a></li>
+          <li><a href="">Productos</a></li>
+        </ul>
+      </li>
+      <li><a href="#"><i class="fa fa-flask"></i>Proveedores</a></li>
+      <li><a href="#"><i class="fa fa-user"></i> Clientes</a></li>
+      <li><a href="#"><i class="fa fa-folder-o"></i> Empleados</a></li>
+      <li class="menu-text">Sistema</li>
+      <li><a href="#"><i class="fa fa-gear"></i> Configuraciones</a></li>
+      <li>
+        <a href="#"><i class="fa fa-users"></i> Usuarios</a>
+        <ul class="menu vertical nested">
+          <li><a href="">Visualizar</a></li>
+          <li><a href="">Agregar</a></li>
+          <li><a href="">Borrar</a></li>
+        </ul>
+      </li>
+      <li><a href="#"><i class="fa fa-question-circle-o"></i> Ayuda</a></li>
+      <li><a href="#"><i class="fa fa-envelope-o"></i> Mensajería</a></li>
+      <li><a href="#"><i class="fa fa-book"></i> Diario</a></li>
+    </nav>
+    <span style="position:absolute;bottom:1rem;right:3.5rem;font-size:larger;"><i class="fa fa-code"></i> with <i class="fa fa-coffee"></i> and <i class="fa fa-heart"></i></span>
+  </aside>
+  <!--Fin menu canvas-->
+  <!--Fuera del canvas-->
+  <main class="off-canvas-content" data-off-canvas-content>
+    <!--Barra superior-->
+    <div class="top-bar">
+      <section class="top-bar-left">
+        <button type="button" class="button" data-toggle="menu" data-transition="overlap"><i class="fa fa-bars"></i></button>
+      </section>
+      <section class="top-bar-right button-group">
+        <button class="button nmr" data-open="config-modal"><i class="fa fa-gear fa-pull-left"></i> Configuraciones</button>
+        <button class="alert button" data-open="Log-out-modal"><i class="fa fa-sign-out fa-pull-left"></i> Cerrar Sessión</button>
+      </section>
+    </div>
+    <!--Fin barra superior-->
+    <!--Rejillas-->
+    <div class="grid-container fluid">
+      <div class="large-12">
+        <h3 class="text-center">¡Bienvenidos a SIGADTIC!</h3>
+      </div>
+    </div>
+    <!--Fin de rejillas-->
+  </main>
+  <!--Fin del fuera de canvas-->
+</body>
+<script src="../js/jquery.js" charset="utf-8"></script>
+<script src="../js/foundation.min.js" charset="utf-8"></script>
+<script src="../js/angular.js" charset="utf-8"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $(this).foundation();
+  });
+</script>
+</html>
+<!--Modales-->
+  <!--Log-out-->
+  <div class="reveal" id="Log-out-modal" data-animation-in="slide-in-down" data-animation-out="slide-out-up" data-reveal>
+    <h3 class="text-center">¿Estás seguro que desea cerrar sessión?</h3>
+    <hr/>
+    <div class="align-center button-group">
+      <button class="button alert" data-close arial-label="Close modal"><i class="fa fa-thumbs-up fa-pull-left"></i> No</button>
+      <button class="button success" onclick="window.location='../index.php'"><i class="fa fa-thumbs-down fa-pull-left"></i> Sí</button>
+    </div>
+  </div>
+  <!--Fin Log-out-->
+  <!--Config-->
+  <div class="reveal" id="config-modal" data-animation-in="slide-in-down" data-animation="slide-out-up" data-reveal>
+    <h3 class="text-center">Configuración de la interfaz</h3>
+    <hr/>
+    
+    <button class="close-button" aria-label="Close alert" type="button">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <!--Fin de Config-->
+<!--Fin de modales-->

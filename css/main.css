@@ -1,0 +1,18 @@
+.box-buttons{
+  margin-top: 10%;
+}
+
+.box-buttons > button{
+  font-weight: bold;
+}
+
+div.in{
+  max-width: 30%;
+  max-height: 30%;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}

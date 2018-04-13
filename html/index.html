@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="main">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+</head>
+<body ng-view>
+
+</body>
+</html>
+<script src="../js/angular.js" charset="utf-8"></script>
+<script src="../js/angular-route.js" charset="utf-8"></script>
+<script type="text/javascript">
+  angular.module("main",['ngRoute'])
+    .controller("login",function($scope){
+      $scope.name="hola";
+    })
+    .controller("sign",function($scope){
+      $scope.name="sign";
+    })
+    .config(function($routeProvider){
+      $routeProvider
+        .when("/",{
+          controller : "login",
+          templateUrl : "login.html"
+        })
+        .when("/sign",{
+          controller : "sign",
+          templateUrl : "signin.html"
+        })
+        .otherwhise("/")
+    });
+</script>

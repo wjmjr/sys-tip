@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Tipografía Carúpano - Inicio</title>
+    <link rel="stylesheet" href="/css/main.css"/>
+    <link rel="stylesheet" href="/css/flat-ui.css"/>
+    <link rel="stylesheet" href="/css/notyf.min.css"/>
+    <link rel="stylesheet" href="/css/iconmonstr.min.css"/>
+    <link rel="stylesheet" href="/css/foundation.min.css"/>
+    <link rel="stylesheet" href="/css/font-awesome.min.css"/>
+  </head>
+  <body class="belizehole">
+    <!--Container-->
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x grid-margin-x clouds">
+        <!--Cabecera-->
+        <header class="large-6 medium-6 cell">
+          <a href="./"><img src="/img/logo.png" alt="Logo de la tipografía" title="Logo de la tipografía" class="align-center"/></a>
+        </header>
+        <!--.Cabecera-->
+        <!--Botones-->
+        <aside class="large-6 medium-6 cell">
+          <div class="button-group float-right box-buttons">
+            <button type="button" class="success button" id="Log-in">Ingresar <i class="fa fa-sign-in"></i></button>
+            <button type="button" class="primary button" id="Sign-in">Registrarse <i class="fa fa-flask"></i></button>
+          </div>
+        </aside>
+        <!--.Botones-->
+        <!--Menú-->
+        <nav class="large-12 cell dropdown menu" data-dropdown-menu>
+          <li>
+            <a href="#inicio">Inicio</a>
+          </li>
+          <li>
+            <a href="#información">Información</a>
+            <ul class="menu">
+              <li><a href="#">Visión</a></li>
+              <li><a href="#">Misión</a></li>
+              <li><a href="#">¿Quienes somos?</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#productos">Productos</a>
+          </li>
+        </nav>
+        <!--.Menú-->
+        <!--Vistas-->
+        <div class="large-12 cell" id="vistas" ng-view></div>
+        <!--.Vistas-->
+      </div>
+      <!--Footer-->
+      <footer class="large-12 cell steel">
+        <h6 class="text-center">Hecho con amor en patria</h6>
+      </footer>
+      <!--.Footer-->
+    </div>
+    <!--.Container-->
+  </body>
+  <script src="/js/notyf.min.js" charset="utf-8"></script>
+  <script src="/js/jquery.js" charset="utf-8"></script>
+  <script src="/js/foundation.min.js" charset="utf-8"></script>
+  <script src="/js/main.js" charset="utf-8"></script>
+</html>
