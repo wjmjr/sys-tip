@@ -35,9 +35,9 @@
           <li>
             <a href="#información">Información</a>
             <ul class="menu">
-              <li><a href="#">Visión</a></li>
-              <li><a href="#">Misión</a></li>
-              <li><a href="#">¿Quienes somos?</a></li>
+              <li><a href="#vision">Visión</a></li>
+              <li><a href="#mision">Misión</a></li>
+              <li><a href="#quiensomos">¿Quienes somos?</a></li>
             </ul>
           </li>
           <li>
@@ -46,12 +46,17 @@
         </nav>
         <!--.Menú-->
         <!--Vistas-->
-        <div class="large-12 cell" id="vistas" ng-view></div>
+        <div class="large-12 cell" id="layout"></div>
         <!--.Vistas-->
       </div>
       <!--Footer-->
       <footer class="large-12 cell steel">
         <h6 class="text-center">Hecho con amor en patria</h6>
+        <ul class="no-bullet">
+          <li>facebook</li>
+          <li>Instegram</li>
+          <li>Coreo</li>
+        </ul>
       </footer>
       <!--.Footer-->
     </div>
@@ -60,5 +65,10 @@
   <script src="/js/notyf.min.js" charset="utf-8"></script>
   <script src="/js/jquery.js" charset="utf-8"></script>
   <script src="/js/foundation.min.js" charset="utf-8"></script>
-  <script src="/js/main.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    $(document).foundation();
+    $('#Sign-in').click(function(){$('#layout').load('/html/signin.html')});
+    $('#Log-in').click(function(){$('#layout').load('/html/login.html')});
+    $('form').submit(function(event){event.preventDefault();});
+  </script>
 </html>

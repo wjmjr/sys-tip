@@ -29,10 +29,6 @@ class main
     }
   }
 
-  public function consola($a){
-    return print "<script>console.log(\"$a\")</script>";
-  }
-
   /*
   * Metodo para validar si un rif ya está en el sistema:
   * Sí ese es el caso, se retornará verdadero.
