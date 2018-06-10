@@ -4,7 +4,7 @@
  */
 class ruta {
   /*Propiedades*/
-  /*$_controladores [Array|Private] Almacena todos los nombres de los controladores en el sistema*/
+  /**$_controladores [Array|Private] Almacena todos los nombres de los controladores en el sistema*/
   private $_controladores = [];
 
   /*Metodos*/

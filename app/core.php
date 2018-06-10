@@ -1,2 +1,2 @@
 <?php
-require_once 'core/rutas.php';
+require_once 'core/ruta.php';
