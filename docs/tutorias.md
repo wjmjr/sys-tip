@@ -1,0 +1,2 @@
+## Junio
+- Lunes 11: Primera tutoria con María sobre el proyecto. (Se hablo de la encuesta, la base de datos, el proyecto) Solo fueron Michelle y Wally. Se propuso llevar una encuesta "mejorada" y la base de datos a María para que lo revise
